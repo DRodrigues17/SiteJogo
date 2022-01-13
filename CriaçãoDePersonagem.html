@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <title>criação de personagem</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/75/845/png-transparent-destiny-game-logo-logo-font-destiny-white-text-hand.png">
+</head> 
+<body>
+    <form action="https://api-dwi.herokuapp.com/api/examples" method="post">
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="SiteJogo.html">menu do jogo</a></li>
+                <li><a href="CriaçãoDePersonagem.html">cadastro de personagem</a></li>
+            </ul>
+            <h1>Classes</h1>
+            <ul>
+                <li><a class="classe">TITÃ</a>
+                
+                    <ul>
+                        <img class="personagem" src="https://d2.destinygamewiki.com/mediawiki/images/5/54/Titan_closeup1.png">
+                        <li class="arco">Combatente
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/3/38/Striker_crest.png" > 
+                            <p  class="arco">Golpeie o chão e dissolva os inimigos em um turbilhão de Luz de Arco.</p>
+                        </li>
+                        <li class="vacuo">Defensor
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/e/e3/Sentinel_crest.png" >
+                            <p class="vacuo">(Nível 15) Modele a Luz do Vácuo para criar um escudo indestrutivel que protege você e seus aliados do perigo.</p>
+                        </li>    
+                        <li class="solar">Demolidor Solar
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/a/a8/Sunbreaker_crest.png" >
+                            <p class="solar">(Nível 25) Forje a Luz Solar em martelos flamejantes que estouram as defesas inimigas.</p>
+                        </li>    
+                    </ul>
+                </li>
+                <li><a class="classe">CAÇADOR</a>
+                    <ul>
+                        <img class="personagem"  src="https://d2.destinygamewiki.com/mediawiki/images/3/38/Hunter_closeup1.png">
+                        <li class="solar">Pistoleiro
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/2/2f/Gunslinger_crest.png">
+                            <p class="solar">Invoque uma pistola flamejante que desintregra inimigos com Luz Solar.</p>
+                        </li>
+                        <li class="arco">Dançarino Lacerante
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/3/31/Arcstrider_crest.png" >
+                            <P class="arco">(Nível 15) Carregue a sua lamina com Luz de Arco e consuma seus inimigos com eletricidade</P>
+                        </li>
+                        <li class="vacuo">Predador Noturno
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/5/56/Nightstalker_crest.png">
+                            <p class="vacuo">(Nível 25) Arme-se com um arco de Luz do Vácuo para caçar e prender os inimigos, e guiar os seus aliados com segurança através da Treva.</p>
+                        </li>        
+                    </ul>
+                </li>
+                <li><a class="classe">ARCANO</a>
+                    <ul>
+                        <img class="personagem" src="https://d2.destinygamewiki.com/mediawiki/images/a/ab/Warlock_closeup1.png">
+                        <li class="vacuo"> Andarilho do Vácuo
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/4/4b/Voidwalker_crest.png">
+                            <p class="vacuo">Arremesse um virote explosivo de Luz do Vácuo contra o inimigo, desintegrando aqueles que forem pegos na explosão.</p>
+                        </li>
+                        <li class="solar">Heliomante
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/a/aa/Dawnblade_crest.png">
+                            <p class="solar">(Nível 15) Encha-se de Luz Solar, aumentando dramaticamente a efetividade de todas as suas habilidades.</p>
+                        </li>
+                        <li class="arco">Condutor da Tempestade
+                            <img src="https://d2.destinygamewiki.com/mediawiki/images/d/d7/Stormcaller_crest.png">
+                            <p class="arco">(Nível 25) Canalize a Luz de Arco para levitar no ar e e soltar uma torrente de relâmpagos das usas mãos.</p>
+                        </li>        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Criação  do personagem</h1>
+            <br>
+                <h2>Escolha a classe</h2>
+                <input type="radio" id="br" name="classe" value="tita">
+                <label for="br">Tita</label>
+                <input type="radio" id="usa" name="classe" value="caçador">
+                <label for="usa">Caçador</label>
+                <input type="radio" id="eu" name="classe" value="arcano">
+                <label for="eu">Arcano</label>
+            <br>
+            <br>
+                <h2>Escolha a Raça</h2>
+                <input type="radio" id="br" name="raça" value="humano">
+                <label for="br">Humano</label>
+                <input type="radio" id="usa" name="raça" value="desperto">
+                <label for="usa">Desperto</label>
+                <input type="radio" id="eu" name="raça" value="exo">
+                <label for="eu">Exo</label>
+            <br>
+            <br>
+                <h2>Escolha o servidor (recomenda-se que seja utilizado o servidor mais próximo de sua localização, para evitar problemas de ping e delay)</h2>
+                <input type="radio" id="br" name="servidor" value="americas">
+                <label for="northAmerica">America do Norte</label>
+                <input type="radio" id="usa" name="servidor" value="europa">
+                <label for="europe">Europa</label>
+                <input type="radio" id="eu" name="servidor" value="asia">
+                <label for="asia">Ásia</label>
+            <br>
+        <button type="submit">feito</button>
+    </form>
+</body>
+</html>
+
+<style>
+    @font-face {
+        font-family: 'destiny';
+        src: url('Futurist fixed-width.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    title{
+        font-family: 'destiny';
+    }
+    body{
+       /* deixei a fonte comentada, pois ela mudava demais a estrutura nessa página
+        font-family: 'destiny';*/
+        background-image: url("https://images.hdqwalls.com/wallpapers/destiny-logo-artwork.jpg");
+        background-size: cover;
+        color: azure;
+    }
+    .dropdown-menu ul {
+        list-style-type: none;
+        padding: 20;
+    }   
+    .dropdown-menu ul li {
+        display: inline;
+        position: relative;
+    }
+    .dropdown-menu ul li a {
+        color: azure;
+        background-color: grey;
+        text-decoration: none;
+        display: inline;
+        padding: 10px;
+        transition: background .3s;
+    }
+    .dropdown-menu ul li a:hover {
+        background-color: cyan;
+        box-shadow: 0 6px 12px cyan;
+    }
+    .dropdown-menu ul ul {
+        display: none;
+        left: 0;
+        position: absolute;
+    }
+    .dropdown-menu ul li:hover ul {
+        margin: 30%;
+        display: inline-flex;
+    }
+    .personagem{
+        width: fit-content;
+        height: fit-content;
+        margin: 2%;
+        text-align: center;
+        
+    }
+    .subclasse{
+        text-align: center;
+    }
+    p{
+        text-align: center;   
+    }
+    .solar{
+        color: orange;
+        background-color: grey;
+        text-align: center;
+    }
+    .arco{
+        color: paleturquoise;
+        background-color: grey;
+        text-align: center;
+    }
+    .vacuo{
+        color: rebeccapurple;
+        background-color: grey;
+        text-align: center;
+    }
+    h2{
+        color: azure;
+    }    
+
+</style>
